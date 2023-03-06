@@ -1,4 +1,5 @@
 import styles from './ChocolateItem.module.css'
+import ChocolateItemForm from './ChocolateItemForm'
 
 const ChocolateItem = props => {
   const price = `$${props.price.toFixed(2)}`
@@ -9,7 +10,9 @@ const ChocolateItem = props => {
       <div className={styles.description}>{props.description}</div>
       <div className={styles.price}>{price}</div>
     </div>
-    <div></div>
+    <div>
+      <ChocolateItemForm id={props.id}/>
+    </div>
   </li>
 }
 

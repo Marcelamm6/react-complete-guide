@@ -32,6 +32,7 @@ const DUMMY_CHOCOLATES = [
 const AvailableChocolates = () => {
   const chocolatesList = DUMMY_CHOCOLATES.map(chocolate => (
     <ChocolateItem 
+      id={chocolate.id}
       key={chocolate.id} 
       name={chocolate.name} 
       description={chocolate.description} 
