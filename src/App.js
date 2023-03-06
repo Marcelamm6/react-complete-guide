@@ -1,8 +1,15 @@
+import { Fragment } from "react";
+import Chocolates from "./Components/Chocolates/Chocolates";
+import Header from "./Components/Layout/Header";
+
 function App() {
   return (
-    <div>
-      <h2>Let's get started!</h2>
-    </div>
+    <Fragment>
+      <Header/>
+      <main>
+        <Chocolates/>
+      </main>
+    </Fragment>
   );
 }
 
